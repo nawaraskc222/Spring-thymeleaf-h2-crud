@@ -7,7 +7,7 @@ public interface  UserService {
 	
 	 List < UserEntity > getAllEntities();
 	    void save(UserEntity user);
-	    UserEntity getEmployeeById(long id);
-	    void deleteEmployeeById(long id);
+	    UserEntity getStudentById(int id);
+	    void deleteStudentById(int id);
 
 }

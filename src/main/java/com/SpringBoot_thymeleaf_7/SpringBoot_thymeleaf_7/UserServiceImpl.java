@@ -19,7 +19,11 @@ public class UserServiceImpl  implements UserService {
 	@Override
 	public List<UserEntity> getAllEntities() {
 		// TODO Auto-generated method stub
-        return repository.findAll();
+		
+		
+		  List<UserEntity> users = repository.findAll();
+		  
+        return users;
 
 	}
 
@@ -32,16 +36,18 @@ public class UserServiceImpl  implements UserService {
 	}
 
 	@Override
-	public UserEntity getEmployeeById(long id) {
+	public UserEntity getStudentById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void deleteEmployeeById(long id) {
+	public void deleteStudentById(int id) {
 		// TODO Auto-generated method stub
 		
 	}
+
+
 
 	
 
